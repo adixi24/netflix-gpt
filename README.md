@@ -71,15 +71,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 create-react-app
 configured tailwindcss
-#Features
-Browse(only if you logged in) otherwise sign in and signupform
-header
-mainMovie
-trailer in background
-title and description
-movie suggestions
-movie list *n
 
-netFlixGPT
-Search Bar
-Moviesuggestion
+#Features
+--Browse(only if you logged in) otherwise sign in and signupform
+        header
+            mainMovie
+            trailer in background
+            title and description
+            movie suggestions
+            movie list *n
+
+            netFlixGPT
+                Search Bar
+                Moviesuggestion
