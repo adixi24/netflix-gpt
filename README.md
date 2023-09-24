@@ -74,6 +74,9 @@ configured tailwindcss
 Header
 LoginForm
 Sign up form
+Routing 
+Form Validation
+useRef hook
 
 
 #Features
@@ -88,3 +91,4 @@ Sign up form
             netFlixGPT
                 Search Bar
                 Moviesuggestion
+
