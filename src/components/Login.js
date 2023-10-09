@@ -1,12 +1,16 @@
 import { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidateData } from "../utils/Validate";
+import {auth} from "../utils/Firebase";
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword  } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const Login = () =>{
     const[isSignInForm,setIsSignInForm] = useState(true);
     const[errorMessage ,setErrorMessage]=useState(null);
     const email = useRef(null);
-    const password = useRef(null)
+    const password = useRef(null);
+    const navigate=useNavigate();
 
     const togleSignInForm =()=>{
         setIsSignInForm(!isSignInForm);
@@ -14,11 +18,45 @@ const Login = () =>{
 
     const handleButtonClick =()=>{
         //validate the form data
-
    const message = checkValidateData(email.current.value,password.current.value);
    setErrorMessage(message);
- 
+   if(message) return;//if it has any error message then my program should return from here itself
+    if(!isSignInForm){
+      //sign up
+      createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+        .then((userCredential) => {
+         // Signed up 
+        const user = userCredential.user;
+        console.log("signed up provide user object"+user);
+        navigate("/browse");
+         // ...
+     })
+      .catch((error) => {
+       const errorCode = error.code;
+       const errorMessage = error.message;
+       setErrorMessage(errorCode +"-"+errorMessage);
+    // ..
+  });
     }
+    else{
+        signInWithEmailAndPassword(auth,  email.current.value, password.current.value)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("user loged in"+user)
+    navigate("/browse");
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    setErrorMessage(errorCode +"-"+errorMessage);
+  });
+
+    }
+   }
+ 
+    
     return (
         <div>
             <Header />

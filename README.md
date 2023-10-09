@@ -77,6 +77,11 @@ Sign up form
 Routing 
 Form Validation
 useRef hook
+firebase setup
+deploy our app  to production
+create sign up user acccount in firebase
+implement sign in user api
+created our redux store with user slice
 
 
 #Features
