@@ -82,6 +82,31 @@ deploy our app  to production
 create sign up user acccount in firebase
 implement sign in user api
 created our redux store with user slice
+implemented signout
+update profile api
+Fetch moview from TMDB
+bugfix
+if the user is not loged in redirect to /browse page and vice versa.
+unsubscribed to the onAuthStateChanged callback
+Add hardcoded values to Constant file.
+get the movie data from TMDB 
+registerd in tmdb data base
+created an app
+go to doc and made api call now playing api and load it into browse page
+and put this data ito store
+git Data from TMDB database now playing movies list API
+custom hook for now playing movies
+create moviesSlice
+update store with movies data
+planning for MainContainer and secondaryContainer
+fetch data for trailer vedio
+update store with trailer video data
+embeded the you type vedio
+make it autoplay and mute
+added tailwind class and look awesome
+
+
+
 
 
 #Features
