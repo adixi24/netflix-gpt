@@ -110,6 +110,11 @@ build movie card.
 TMDB image CDN URL.
 made the browse page with amazing taiwind css.
 create customhooks for getting treding upcomming popular movies list.
+GPT Search feature
+GPT Search Bar
+Multi Language feature in our App *
+intigrate Gpt Api(get oppen AI key)
+
 
 
 
