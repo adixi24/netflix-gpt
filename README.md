@@ -104,6 +104,7 @@ update store with trailer video data
 embeded the you type vedio
 make it autoplay and mute
 added tailwind class and look awesome
+build secondary component
 
 
 
