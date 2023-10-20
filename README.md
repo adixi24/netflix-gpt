@@ -105,6 +105,12 @@ embeded the you type vedio
 make it autoplay and mute
 added tailwind class and look awesome
 build secondary component
+build Movie List.
+build movie card.
+TMDB image CDN URL.
+made the browse page with amazing taiwind css.
+create customhooks for getting treding upcomming popular movies list.
+
 
 
 
