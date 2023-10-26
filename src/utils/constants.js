@@ -16,3 +16,4 @@ export const PG_URL="https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-49
 export const SUPORTED_LANGUAGES=[{identifier:"en", name:"English"},
 {identifier:"hindi",name:"Hindi"},
 {identifier:"spanish",name:"Spanish"}];
+export const OPEN_AI_KEY="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";
